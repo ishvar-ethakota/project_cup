@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnect - College Utility Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span class="brand-text">EduConnect</span>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="btn btn-ghost" onclick="showLogin()">Sign In</button>
+                <button class="btn btn-primary" onclick="showSignup()">Get Started</button>
+            </div>
+
+            <div class="mobile-menu-toggle" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i>
+                <span>Trusted by 10,000+ Students</span>
+            </div>
+            <h1 class="hero-title">
+                Your Complete
+                <span class="gradient-text">College Companion</span>
+            </h1>
+            <p class="hero-description">
+                Connect, share, and discover with EduConnect - the ultimate platform for lost & found,
+                marketplace trading, and academic note sharing designed exclusively for college students.
+            </p>
+            <div class="hero-actions">
+                <button class="btn btn-primary btn-large" onclick="showSignup()">
+                    <span>Start Your Journey</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="btn btn-outline btn-large" onclick="showLogin()">
+                    <i class="fas fa-play"></i>
+                    <span>Watch Demo</span>
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Active Students</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5K+</div>
+                    <div class="stat-label">Items Found</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15K+</div>
+                    <div class="stat-label">Notes Shared</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Features</div>
+                <h2 class="section-title">Everything you need in one place</h2>
+                <p class="section-description">
+                    Streamline your college experience with our comprehensive suite of tools
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search-location"></i>
+                    </div>
+                    <h3>Smart Lost & Found</h3>
+                    <p>AI-powered matching system to reunite you with your lost belongings faster than ever.</p>
+                    <div class="feature-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Instant notifications</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Location tracking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card featured">
+                    <div class="feature-badge">Most Popular</div>
+                    <div class="feature-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Student Marketplace</h3>
+                    <p>Buy and sell textbooks, electronics, and more with verified college students.</p>
+                    <div class="feature-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Secure transactions</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Price comparison</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Academic Hub</h3>
+                    <p>Access and share study materials, notes, and resources organized by subject and semester.</p>
+                    <div class="feature-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Quality verified</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Easy organization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">About EduConnect</div>
+                <h2 class="section-title">Empowering Student Communities Worldwide</h2>
+                <p class="section-description">
+                    Built by students, for students. We understand the unique challenges of college life and created
+                    EduConnect to make your academic journey smoother, more connected, and infinitely more rewarding.
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-hero">
+                    <div class="about-hero-content">
+                        <div class="about-hero-text">
+                            <h3>Transforming College Life, One Connection at a Time</h3>
+                            <p>Since our founding in 2023, EduConnect has revolutionized how students connect, share
+                                resources, and support each other's academic success. What began as a simple idea to
+                                help students find lost items has evolved into a comprehensive ecosystem that serves
+                                over 10,000 students across 50+ institutions.</p>
+                            <div class="about-hero-stats">
+                                <div class="hero-stat">
+                                    <div class="hero-stat-number">99.8%</div>
+                                    <div class="hero-stat-label">Student Satisfaction</div>
+                                </div>
+                                <div class="hero-stat">
+                                    <div class="hero-stat-number">24/7</div>
+                                    <div class="hero-stat-label">Platform Availability</div>
+                                </div>
+                                <div class="hero-stat">
+                                    <div class="hero-stat-number">5M+</div>
+                                    <div class="hero-stat-label">Successful Connections</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-hero-visual">
+                            <div class="about-visual-card">
+                                <div class="visual-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4>Community First</h4>
+                                <p>Every feature is designed with student needs at the center</p>
+                            </div>
+                            <div class="about-visual-card">
+                                <div class="visual-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>Secure & Safe</h4>
+                                <p>Bank-level security protecting your data and privacy</p>
+                            </div>
+                            <div class="about-visual-card">
+                                <div class="visual-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h4>Always Innovating</h4>
+                                <p>Cutting-edge technology solving real student problems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-mission">
+                    <div class="mission-content">
+                        <div class="mission-text">
+                            <div class="mission-badge">Our Mission</div>
+                            <h3>Creating Seamless Student Experiences</h3>
+                            <p>We believe that education is most powerful when it's collaborative. Our mission is to
+                                break down barriers between students, making it easier to find lost items, share
+                                academic resources, and build meaningful connections within college communities.</p>
+                            <p>Every line of code we write, every feature we build, and every decision we make is guided
+                                by one simple principle: empowering students to focus on what matters most - their
+                                education and personal growth.</p>
+                        </div>
+                        <div class="mission-visual">
+                            <div class="mission-circle">
+                                <div class="mission-center">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Student Success</span>
+                                </div>
+                                <div class="mission-orbit">
+                                    <div class="orbit-item" style="--angle: 0deg;">
+                                        <i class="fas fa-search-location"></i>
+                                    </div>
+                                    <div class="orbit-item" style="--angle: 72deg;">
+                                        <i class="fas fa-store"></i>
+                                    </div>
+                                    <div class="orbit-item" style="--angle: 144deg;">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="orbit-item" style="--angle: 216deg;">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="orbit-item" style="--angle: 288deg;">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-values">
+                    <div class="values-header">
+                        <h3>Our Core Values</h3>
+                        <p>The principles that guide everything we do</p>
+                    </div>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Privacy & Security</h4>
+                            <p>Your data is sacred. We use military-grade encryption and never share your personal
+                                information. Your privacy isn't just protected—it's our promise.</p>
+                            <div class="value-features">
+                                <span>End-to-end encryption</span>
+                                <span>GDPR compliant</span>
+                                <span>Zero data selling</span>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Community Driven</h4>
+                            <p>Every feature exists because students asked for it. We listen, we learn, and we build
+                                exactly what you need to succeed in your academic journey.</p>
+                            <div class="value-features">
+                                <span>Student feedback first</span>
+                                <span>Regular surveys</span>
+                                <span>Open communication</span>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h4>Innovation Excellence</h4>
+                            <p>We leverage cutting-edge AI and machine learning to solve age-old student problems in
+                                revolutionary new ways that actually work.</p>
+                            <div class="value-features">
+                                <span>AI-powered matching</span>
+                                <span>Smart recommendations</span>
+                                <span>Predictive analytics</span>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4>Student Success</h4>
+                            <p>Your academic and personal success drives everything we do. We measure our success by
+                                yours, and we're not satisfied until you're thriving.</p>
+                            <div class="value-features">
+                                <span>24/7 support</span>
+                                <span>Success tracking</span>
+                                <span>Continuous improvement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-team">
+                    <div class="team-header">
+                        <h3>Meet the Team Behind EduConnect</h3>
+                        <p>Passionate educators, developers, and student advocates working to transform college life</p>
+                    </div>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h4>Sarah Chen</h4>
+                            <p class="member-role">Founder & CEO</p>
+                            <p class="member-bio">Former Stanford student who lost her laptop and started EduConnect to
+                                help others avoid the same frustration.</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Marcus Johnson</h4>
+                            <p class="member-role">CTO & Co-founder</p>
+                            <p class="member-bio">MIT graduate with 10+ years in EdTech, passionate about building
+                                technology that empowers students.</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h4>Elena Rodriguez</h4>
+                            <p class="member-role">Head of Design</p>
+                            <p class="member-bio">Award-winning UX designer focused on creating intuitive experiences
+                                that students actually love to use.</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>David Kim</h4>
+                            <p class="member-role">Head of Growth</p>
+                            <p class="member-bio">Former student body president turned growth expert, dedicated to
+                                bringing EduConnect to every campus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-cta">
+                    <div class="cta-content">
+                        <h3>Ready to Transform Your College Experience?</h3>
+                        <p>Join thousands of students who have already discovered the power of connected campus life.
+                        </p>
+                        <div class="cta-actions">
+                            <button class="btn btn-primary btn-large" onclick="showSignup()">
+                                <span>Get Started Today</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <button class="btn btn-outline-primary btn-large" onclick="showLogin()">
+                                <span>Sign In</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Get In Touch</div>
+                <h2 class="section-title">We're Here to Help You Succeed</h2>
+                <p class="section-description">
+                    Questions, suggestions, or need support? Our dedicated team is always ready to assist you on your
+                    academic journey.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-hero">
+                    <div class="contact-hero-grid">
+                        <div class="contact-hero-text">
+                            <h3>Your Success is Our Priority</h3>
+                            <p>We're not just a platform—we're your partners in academic success. Whether you need
+                                technical support, have a feature request, or want to share your success story, we're
+                                here to listen and help.</p>
+                            <div class="contact-guarantees">
+                                <div class="guarantee-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>24-hour response guarantee</span>
+                                </div>
+                                <div class="guarantee-item">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Dedicated student support team</span>
+                                </div>
+                                <div class="guarantee-item">
+                                    <i class="fas fa-shield-check"></i>
+                                    <span>100% confidential conversations</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-hero-stats">
+                            <div class="contact-stat">
+                                <div class="contact-stat-number">4.9/5</div>
+                                <div class="contact-stat-label">Support Rating</div>
+                            </div>
+                            <div class="contact-stat">
+                                <div class="contact-stat-number">&lt;2hrs</div>
+                                <div class="contact-stat-label">Avg Response Time</div>
+                            </div>
+                            <div class="contact-stat">
+                                <div class="contact-stat-number">98%</div>
+                                <div class="contact-stat-label">Issue Resolution</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-main">
+                    <div class="contact-methods">
+                        <h3>Choose Your Preferred Way to Connect</h3>
+                        <div class="methods-grid">
+                            <div class="contact-method">
+                                <div class="method-header">
+                                    <div class="method-icon">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Live Chat</h4>
+                                        <p class="method-status online">Available Now</p>
+                                    </div>
+                                </div>
+                                <p class="method-description">Get instant help from our support team. Perfect for quick
+                                    questions and technical issues.</p>
+                                <div class="method-details">
+                                    <span><i class="fas fa-clock"></i> Instant response</span>
+                                    <span><i class="fas fa-users"></i> Real human support</span>
+                                </div>
+                                <button class="btn btn-primary method-btn">
+                                    <span>Start Chat</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-header">
+                                    <div class="method-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Email Support</h4>
+                                        <p class="method-status">support@educonnect.com</p>
+                                    </div>
+                                </div>
+                                <p class="method-description">Detailed support for complex issues. Include screenshots
+                                    and we'll provide comprehensive solutions.</p>
+                                <div class="method-details">
+                                    <span><i class="fas fa-clock"></i> Response within 4 hours</span>
+                                    <span><i class="fas fa-file-alt"></i> Detailed documentation</span>
+                                </div>
+                                <button class="btn btn-outline-primary method-btn">
+                                    <span>Send Email</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-header">
+                                    <div class="method-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Phone Support</h4>
+                                        <p class="method-status">+1 (555) 123-4567</p>
+                                    </div>
+                                </div>
+                                <p class="method-description">Speak directly with our support specialists for urgent
+                                    issues or complex problems.</p>
+                                <div class="method-details">
+                                    <span><i class="fas fa-clock"></i> Mon-Fri, 8AM-8PM EST</span>
+                                    <span><i class="fas fa-headset"></i> Dedicated support line</span>
+                                </div>
+                                <button class="btn btn-outline-primary method-btn">
+                                    <span>Call Now</span>
+                                    <i class="fas fa-phone"></i>
+                                </button>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-header">
+                                    <div class="method-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Visit Our Office</h4>
+                                        <p class="method-status">San Francisco, CA</p>
+                                    </div>
+                                </div>
+                                <p class="method-description">Drop by our headquarters for in-person meetings, campus
+                                    partnerships, or just to say hello!</p>
+                                <div class="method-details">
+                                    <span><i class="fas fa-clock"></i> Mon-Fri, 9AM-6PM</span>
+                                    <span><i class="fas fa-calendar"></i> Appointments preferred</span>
+                                </div>
+                                <button class="btn btn-outline-primary method-btn">
+                                    <span>Get Directions</span>
+                                    <i class="fas fa-map"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <div class="form-container">
+                            <div class="form-header">
+                                <h3>Send Us a Message</h3>
+                                <p>Tell us how we can help you succeed. We read every message and respond personally.
+                                </p>
+                            </div>
+
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="contactFirstName">First Name *</label>
+                                        <input type="text" id="contactFirstName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactLastName">Last Name *</label>
+                                        <input type="text" id="contactLastName" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="contactEmail">Email Address *</label>
+                                        <input type="email" id="contactEmail" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactPhone">Phone Number</label>
+                                        <input type="tel" id="contactPhone">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactUniversity">University/Institution</label>
+                                    <input type="text" id="contactUniversity" placeholder="e.g., Stanford University">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactSubject">How can we help you? *</label>
+                                    <select id="contactSubject" required>
+                                        <option value="">Choose a topic</option>
+                                        <option value="technical">Technical Support</option>
+                                        <option value="account">Account Issues</option>
+                                        <option value="feature">Feature Request</option>
+                                        <option value="bug">Bug Report</option>
+                                        <option value="partnership">Campus Partnership</option>
+                                        <option value="feedback">General Feedback</option>
+                                        <option value="press">Press Inquiry</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactMessage">Your Message *</label>
+                                    <textarea id="contactMessage" rows="6"
+                                        placeholder="Tell us more about how we can help you..." required></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="contactUpdates">
+                                        <span class="checkmark"></span>
+                                        I'd like to receive updates about new features and improvements
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full btn-large">
+                                    <span>Send Message</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-additional">
+                    <div class="additional-grid">
+                        <div class="additional-section">
+                            <h3>Frequently Asked Questions</h3>
+                            <div class="faq-list">
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>How do I verify my student status?</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>Simply sign up with your .edu email address. We automatically verify your
+                                            student status through our secure verification system. If you don't have a
+                                            .edu email, you can upload your student ID or enrollment verification.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>Is EduConnect completely free?</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>Yes! EduConnect is 100% free for all verified students. We believe education
+                                            resources should be accessible to everyone. We're supported by partnerships
+                                            with universities and optional premium features for institutions.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>How do you ensure transaction safety?</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>We use secure payment processing, verified student profiles, and encourage
+                                            meetups in safe, public campus locations. Our rating system and community
+                                            guidelines help maintain a trustworthy environment.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h4>Can I use EduConnect at any university?</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>We're rapidly expanding to universities nationwide! Currently available at
+                                            50+ institutions with new campuses added monthly. Contact us if your school
+                                            isn't listed yet—we prioritize based on student demand.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="additional-section">
+                            <h3>Connect With Us</h3>
+                            <div class="social-section">
+                                <p>Follow us for updates, tips, and student success stories</p>
+                                <div class="social-links">
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-twitter"></i>
+                                        <span>@EduConnect</span>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>@EduConnectApp</span>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-linkedin"></i>
+                                        <span>EduConnect</span>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-discord"></i>
+                                        <span>EduConnect Community</span>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-youtube"></i>
+                                        <span>EduConnect</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="newsletter-section">
+                                <h4>Stay Updated</h4>
+                                <p>Get the latest features and student success tips delivered to your inbox</p>
+                                <form class="newsletter-form">
+                                    <div class="newsletter-input">
+                                        <input type="email" placeholder="Enter your email">
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-overlay" onclick="closeModal('loginModal')"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Welcome back</h2>
+                <p>Sign in to your account to continue</p>
+                <button class="modal-close" onclick="closeModal('loginModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <form id="loginForm" class="modal-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email address</label>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="isAdmin">
+                        <span class="checkmark"></span>
+                        Admin Login
+                    </label>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    <span>Sign In</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <div class="modal-footer">
+                <p>Don't have an account? <a href="#" onclick="showSignup()">Create one</a></p>
+                <div class="demo-credentials">
+                    <p><strong>Demo Credentials:</strong></p>
+                    <p>Admin: admin@college.edu / admin123</p>
+                    <p>User: john@example.com / password123</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-overlay" onclick="closeModal('signupModal')"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Create your account</h2>
+                <p>Join thousands of students already using EduConnect</p>
+                <button class="modal-close" onclick="closeModal('signupModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <form id="signupForm" class="modal-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="signupName" placeholder="Enter your full name" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail">Email address</label>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="signupPassword" placeholder="Create a strong password" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPhone">Phone Number</label>
+                    <div class="input-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="signupPhone" placeholder="Enter your phone number" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    <span>Create Account</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <div class="modal-footer">
+                <p>Already have an account? <a href="#" onclick="showLogin()">Sign in</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Dashboard -->
+    <div id="userDashboard" class="dashboard" style="display: none;">
+        <!-- Dashboard Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <div class="brand-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <span class="brand-text">EduConnect</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">Main</div>
+                    <a href="#" class="nav-item active" onclick="showTab('overview')">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Overview</span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title">Services</div>
+                    <a href="#" class="nav-item" onclick="showTab('lost-found-user')">
+                        <i class="fas fa-search-location"></i>
+                        <span>Lost & Found</span>
+                        <div class="nav-badge">2</div>
+                    </a>
+                    <a href="#" class="nav-item" onclick="showTab('marketplace-user')">
+                        <i class="fas fa-store"></i>
+                        <span>Marketplace</span>
+                    </a>
+                    <a href="#" class="nav-item" onclick="showTab('notes-user')">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Academic Hub</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name" id="userName">John Doe</div>
+                        <div class="user-email">Student</div>
+                    </div>
+                    <button class="logout-btn" onclick="logout()">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Dashboard Main Content -->
+        <main class="dashboard-main">
+            <div class="dashboard-header">
+                <div class="header-left">
+                    <button class="sidebar-toggle" id="sidebar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="breadcrumb">
+                        <span class="breadcrumb-item active" id="currentPageTitle">Overview</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="header-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+                    <button class="header-btn">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Overview Tab -->
+            <div id="overview" class="tab-content active">
+                <div class="page-header">
+                    <h1>Dashboard Overview</h1>
+                    <p>Welcome back! Here's what's happening with your account.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon lost-found">
+                            <i class="fas fa-search-location"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" id="userLostItems">0</div>
+                            <div class="stat-label">Lost Items Posted</div>
+                            <div class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>12% from last month</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon marketplace">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" id="userSaleItems">0</div>
+                            <div class="stat-label">Items for Sale</div>
+                            <div class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>8% from last month</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon notes">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" id="userNotes">0</div>
+                            <div class="stat-label">Notes Shared</div>
+                            <div class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>15% from last month</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon engagement">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">24</div>
+                            <div class="stat-label">Engagement Score</div>
+                            <div class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>5% from last month</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Recent Activity</h3>
+                            <button class="btn btn-ghost btn-sm">View All</button>
+                        </div>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-search-location"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Posted "Lost Wallet"</div>
+                                    <div class="activity-time">2 hours ago</div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Listed "Physics Textbook"</div>
+                                    <div class="activity-time">1 day ago</div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Uploaded "Math Notes"</div>
+                                    <div class="activity-time">3 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Quick Actions</h3>
+                        </div>
+                        <div class="quick-actions">
+                            <button class="quick-action-btn" onclick="showPostLostItem()">
+                                <i class="fas fa-plus"></i>
+                                <span>Report Lost Item</span>
+                            </button>
+                            <button class="quick-action-btn" onclick="showPostSaleItem()">
+                                <i class="fas fa-tag"></i>
+                                <span>Sell Item</span>
+                            </button>
+                            <button class="quick-action-btn" onclick="showUploadNotes()">
+                                <i class="fas fa-upload"></i>
+                                <span>Share Notes</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lost & Found Tab -->
+            <div id="lost-found-user" class="tab-content">
+                <div class="page-header">
+                    <div class="page-title-section">
+                        <h1>Lost & Found</h1>
+                        <p>Help reunite lost items with their owners</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="showPostLostItem()">
+                        <i class="fas fa-plus"></i>
+                        <span>Report Lost Item</span>
+                    </button>
+                </div>
+
+                <div class="filters-section">
+                    <div class="search-container">
+                        <div class="search-input-group">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search lost items..." id="lostItemSearch">
+                        </div>
+                        <button class="btn btn-primary" onclick="searchLostItems()">Search</button>
+                    </div>
+                </div>
+
+                <div id="lostItemsList" class="items-grid"></div>
+            </div>
+
+            <!-- Marketplace Tab -->
+            <div id="marketplace-user" class="tab-content">
+                <div class="page-header">
+                    <div class="page-title-section">
+                        <h1>Student Marketplace</h1>
+                        <p>Buy and sell items with fellow students</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="showPostSaleItem()">
+                        <i class="fas fa-plus"></i>
+                        <span>List Item</span>
+                    </button>
+                </div>
+
+                <div class="filters-section">
+                    <div class="search-container">
+                        <div class="search-input-group">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search marketplace..." id="marketplaceSearch">
+                        </div>
+                        <button class="btn btn-primary" onclick="searchMarketplace()">Search</button>
+                    </div>
+                </div>
+
+                <div id="marketplaceList" class="items-grid"></div>
+            </div>
+
+            <!-- Notes Tab -->
+            <div id="notes-user" class="tab-content">
+                <div class="page-header">
+                    <div class="page-title-section">
+                        <h1>Academic Hub</h1>
+                        <p>Share and access study materials</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="showUploadNotes()">
+                        <i class="fas fa-plus"></i>
+                        <span>Upload Notes</span>
+                    </button>
+                </div>
+
+                <div class="filters-section">
+                    <div class="filter-group">
+                        <select id="semesterFilter" class="filter-select">
+                            <option value="">All Semesters</option>
+                            <option value="1">Semester 1</option>
+                            <option value="2">Semester 2</option>
+                            <option value="3">Semester 3</option>
+                            <option value="4">Semester 4</option>
+                            <option value="5">Semester 5</option>
+                            <option value="6">Semester 6</option>
+                            <option value="7">Semester 7</option>
+                            <option value="8">Semester 8</option>
+                        </select>
+                        <div class="search-input-group">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search by subject..." id="subjectFilter">
+                        </div>
+                        <button class="btn btn-primary" onclick="filterNotes()">Filter</button>
+                    </div>
+                </div>
+
+                <div id="notesList" class="items-grid"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="adminDashboard" class="dashboard admin-dashboard" style="display: none;">
+        <!-- Admin Sidebar -->
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <div class="brand-icon admin">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <span class="brand-text">Admin Panel</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">Dashboard</div>
+                    <a href="#" class="nav-item active" onclick="showTab('admin-overview')">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>Overview</span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title">Management</div>
+                    <a href="#" class="nav-item" onclick="showTab('users-management')">
+                        <i class="fas fa-users"></i>
+                        <span>Users</span>
+                    </a>
+                    <a href="#" class="nav-item" onclick="showTab('pending-approvals')">
+                        <i class="fas fa-clock"></i>
+                        <span>Pending Approvals</span>
+                        <div class="nav-badge" id="pendingCount">0</div>
+                    </a>
+                    <a href="#" class="nav-item" onclick="showTab('content-management')">
+                        <i class="fas fa-folder-open"></i>
+                        <span>Content</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="user-avatar admin">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">Administrator</div>
+                        <div class="user-email">Admin Panel</div>
+                    </div>
+                    <button class="logout-btn" onclick="logout()">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Admin Main Content -->
+        <main class="dashboard-main">
+            <div class="dashboard-header">
+                <div class="header-left">
+                    <button class="sidebar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="breadcrumb">
+                        <span class="breadcrumb-item active" id="adminPageTitle">Admin Overview</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="header-btn" onclick="showNotifications()">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-dot" id="adminNotificationDot"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Admin Overview -->
+            <div id="admin-overview" class="tab-content active">
+                <div class="page-header">
+                    <h1>Admin Dashboard</h1>
+                    <p>Monitor and manage the EduConnect platform</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon users">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" id="totalUsers">0</div>
+                            <div class="stat-label">Total Users</div>
+                            <div class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>5% from last month</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon pending">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" id="pendingApprovals">0</div>
+                            <div class="stat-label">Pending Approvals</div>
+                            <div class="stat-change neutral">
+                                <i class="fas fa-minus"></i>
+                                <span>No change</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon approved">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" id="approvedItems">0</div>
+                            <div class="stat-label">Approved Items</div>
+                            <div class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>18% from last month</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon activity">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">94%</div>
+                            <div class="stat-label">Platform Health</div>
+                            <div class="stat-change positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>2% from last week</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Notifications -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Recent Notifications</h3>
+                        <button class="btn btn-ghost btn-sm" onclick="showTab('pending-approvals')">View All</button>
+                    </div>
+                    <div id="recentNotifications" class="activity-list">
+                        <!-- Notifications will be populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Users Management -->
+            <div id="users-management" class="tab-content">
+                <div class="page-header">
+                    <h1>User Management</h1>
+                    <p>Manage registered users and their accounts</p>
+                </div>
+
+                <div class="table-card">
+                    <div class="table-header">
+                        <h3>All Users</h3>
+                        <div class="table-actions">
+                            <button class="btn btn-ghost">
+                                <i class="fas fa-download"></i>
+                                Export
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>User</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Joined</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="usersTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pending Approvals -->
+            <div id="pending-approvals" class="tab-content">
+                <div class="page-header">
+                    <h1>Pending Approvals</h1>
+                    <p>Review and approve user submissions</p>
+                </div>
+
+                <div class="approval-sections">
+                    <div class="approval-section">
+                        <div class="section-header">
+                            <h3>Lost & Found Items</h3>
+                            <span class="section-count" id="pendingLostCount">0 pending</span>
+                        </div>
+                        <div id="pendingLostItems" class="approval-grid"></div>
+                    </div>
+
+                    <div class="approval-section">
+                        <div class="section-header">
+                            <h3>Academic Notes</h3>
+                            <span class="section-count" id="pendingNotesCount">0 pending</span>
+                        </div>
+                        <div id="pendingNotes" class="approval-grid"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Management -->
+            <div id="content-management" class="tab-content">
+                <div class="page-header">
+                    <h1>Content Management</h1>
+                    <p>Manage all platform content and submissions</p>
+                </div>
+
+                <div class="content-sections">
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h3>Lost & Found Items</h3>
+                            <div class="section-filters">
+                                <select class="filter-select">
+                                    <option value="">All Status</option>
+                                    <option value="approved">Approved</option>
+                                    <option value="pending">Pending</option>
+                                    <option value="rejected">Rejected</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="allLostItems" class="content-grid"></div>
+                    </div>
+
+                    <div class="content-section">
+                        <div class="section-header">
+                            <h3>Academic Notes</h3>
+                            <div class="section-filters">
+                                <select class="filter-select">
+                                    <option value="">All Status</option>
+                                    <option value="approved">Approved</option>
+                                    <option value="pending">Pending</option>
+                                    <option value="rejected">Rejected</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="allNotes" class="content-grid"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Post Lost Item Modal -->
+    <div id="postLostItemModal" class="modal">
+        <div class="modal-overlay" onclick="closeModal('postLostItemModal')"></div>
+        <div class="modal-container large">
+            <div class="modal-header">
+                <h2>Report Lost Item</h2>
+                <p>Help us help you find your lost item</p>
+                <button class="modal-close" onclick="closeModal('postLostItemModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <form id="postLostItemForm" class="modal-form">
+                <div class="form-group">
+                    <label for="lostItemTitle">Item Title</label>
+                    <div class="input-group">
+                        <i class="fas fa-tag"></i>
+                        <input type="text" id="lostItemTitle" placeholder="e.g., Blue Backpack, iPhone 12" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="lostItemDescription">Description</label>
+                    <textarea id="lostItemDescription" placeholder="Provide detailed description of the item..."
+                        required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="lostItemLocation">Last Seen Location</label>
+                    <div class="input-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="lostItemLocation" placeholder="e.g., Library, Cafeteria, Parking Lot"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="lostItemImage">Upload Image (Optional)</label>
+                    <div class="file-upload">
+                        <input type="file" id="lostItemImage" accept="image/*">
+                        <div class="file-upload-content">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <span>Click to upload or drag and drop</span>
+                            <small>PNG, JPG up to 10MB</small>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    <span>Report Lost Item</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Post Sale Item Modal -->
+    <div id="postSaleItemModal" class="modal">
+        <div class="modal-overlay" onclick="closeModal('postSaleItemModal')"></div>
+        <div class="modal-container large">
+            <div class="modal-header">
+                <h2>List Item for Sale</h2>
+                <p>Sell your items to fellow students</p>
+                <button class="modal-close" onclick="closeModal('postSaleItemModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <form id="postSaleItemForm" class="modal-form">
+                <div class="form-group">
+                    <label for="saleItemTitle">Item Title</label>
+                    <div class="input-group">
+                        <i class="fas fa-tag"></i>
+                        <input type="text" id="saleItemTitle" placeholder="e.g., Physics Textbook, Laptop" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="saleItemDescription">Description</label>
+                    <textarea id="saleItemDescription" placeholder="Describe the item condition, features, etc..."
+                        required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="saleItemPrice">Price (₹)</label>
+                        <div class="input-group">
+                            <i class="fas fa-rupee-sign"></i>
+                            <input type="number" id="saleItemPrice" placeholder="0" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="saleItemContact">Contact Info</label>
+                        <div class="input-group">
+                            <i class="fas fa-phone"></i>
+                            <input type="text" id="saleItemContact" placeholder="Phone or email" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="saleItemImage">Upload Image</label>
+                    <div class="file-upload">
+                        <input type="file" id="saleItemImage" accept="image/*">
+                        <div class="file-upload-content">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <span>Click to upload or drag and drop</span>
+                            <small>PNG, JPG up to 10MB</small>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    <span>List Item</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Upload Notes Modal -->
+    <div id="uploadNotesModal" class="modal">
+        <div class="modal-overlay" onclick="closeModal('uploadNotesModal')"></div>
+        <div class="modal-container large">
+            <div class="modal-header">
+                <h2>Share Academic Notes</h2>
+                <p>Help fellow students with your study materials</p>
+                <button class="modal-close" onclick="closeModal('uploadNotesModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <form id="uploadNotesForm" class="modal-form">
+                <div class="form-group">
+                    <label for="notesTitle">Notes Title</label>
+                    <div class="input-group">
+                        <i class="fas fa-book"></i>
+                        <input type="text" id="notesTitle" placeholder="e.g., Data Structures Complete Notes" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="notesSubject">Subject</label>
+                        <div class="input-group">
+                            <i class="fas fa-graduation-cap"></i>
+                            <input type="text" id="notesSubject" placeholder="e.g., Computer Science" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notesSemester">Semester</label>
+                        <select id="notesSemester" required>
+                            <option value="">Select Semester</option>
+                            <option value="1">Semester 1</option>
+                            <option value="2">Semester 2</option>
+                            <option value="3">Semester 3</option>
+                            <option value="4">Semester 4</option>
+                            <option value="5">Semester 5</option>
+                            <option value="6">Semester 6</option>
+                            <option value="7">Semester 7</option>
+                            <option value="8">Semester 8</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="notesDescription">Description (Optional)</label>
+                    <textarea id="notesDescription"
+                        placeholder="Brief description of the content covered..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="notesFile">Upload File</label>
+                    <div class="file-upload">
+                        <input type="file" id="notesFile" accept=".pdf,image/*" required>
+                        <div class="file-upload-content">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <span>Click to upload or drag and drop</span>
+                            <small>PDF, PNG, JPG up to 25MB</small>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    <span>Upload Notes</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification Modal -->
+    <div id="notificationModal" class="modal">
+        <div class="modal-overlay" onclick="closeModal('notificationModal')"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Notifications</h2>
+                <p>Recent activity and updates</p>
+                <button class="modal-close" onclick="closeModal('notificationModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="notificationList" class="modal-form">
+                <!-- Notifications will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
